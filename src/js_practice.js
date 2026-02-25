@@ -11,7 +11,28 @@ let names = users.map(user => user.name)
 console.log(names)
 
 // Create a new array of objects with only the active users
+let activeUsers = users.filter((user) => {
+  return user.active
+})
+
+console.log(activeUsers)
 
 // Return the second object with the active property toggled without mutating the original "users"
+let toggledUser = users.map((user) => {
+  return user.id === 2
+    ? { ...user, active: !user.active }
+    : user
+})
+
+console.log(toggledUser)
 
 // Return one number that tells the amount of active users
+let amountOfActive = users.reduce((acummulator, user) => {
+  if (user.active) {
+    return acummulator + 1
+  } else {
+    return acummulator
+  }
+}, 0)
+
+console.log(amountOfActive)
