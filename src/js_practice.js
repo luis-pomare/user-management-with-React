@@ -36,3 +36,9 @@ let amountOfActive = users.reduce((acummulator, user) => {
 }, 0)
 
 console.log(amountOfActive)
+
+// Return a new array absed on the users one but removing the element with the ID of 2
+
+let usersWithoutTwo = users.filter(user => user.id != 2)
+
+console.log(usersWithoutTwo)
