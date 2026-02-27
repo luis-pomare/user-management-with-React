@@ -1,10 +1,10 @@
 import './App.css';
-import Greeting from './components/Greeting';
+import BasicState from './components/BasicState.jsx';
 
 function App() {
   return (
     <>
-      <Greeting />
+      <BasicState />
     </>
   );
 }
