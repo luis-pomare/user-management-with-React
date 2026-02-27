@@ -1,10 +1,10 @@
 import './App.css';
-import BasicState from './components/BasicState.jsx';
+import ToggleComponent from './components/ToggleComponent.jsx';
 
 function App() {
   return (
     <>
-      <BasicState />
+      <ToggleComponent />
     </>
   );
 }
