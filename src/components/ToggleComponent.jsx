@@ -1,7 +1,16 @@
+import { useState } from 'react';
+
 function ToggleComponent() {
+  const [toggle, setToggle] = useState(false);
+
+  const handleClick = function () {
+    setToggle((currentValue) => !currentValue);
+  };
+
   return (
     <>
-      <p>This is going to be my toggle component</p>
+      <button onClick={handleClick}>Change state</button>
+      <p>The device is {toggle ? 'ON' : 'OFF'}</p>
     </>
   );
 }
