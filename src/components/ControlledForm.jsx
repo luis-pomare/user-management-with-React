@@ -6,13 +6,13 @@ function ControlledForm() {
 
   return (
     <>
-      <form action=''>
+      <form>
         <input
           type='number'
           name='age'
           placeholder='Your age'
           value={age}
-          onChange={(event) => setAge(event.target.value)}
+          onChange={(event) => setAge(Number(event.target.value))}
         />
         <input
           type='text'
