@@ -1,10 +1,10 @@
 import './App.css';
-import ToggleComponent from './components/ToggleComponent.jsx';
+import BasicControlledComponent from './components/BasicControlledComponent.jsx';
 
 function App() {
   return (
     <>
-      <ToggleComponent />
+      <BasicControlledComponent />
     </>
   );
 }
