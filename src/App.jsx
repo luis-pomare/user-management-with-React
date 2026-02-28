@@ -1,10 +1,10 @@
 import './App.css';
-import BasicControlledComponent from './components/BasicControlledComponent.jsx';
+import ControlledForm from './components/ControlledForm.jsx';
 
 function App() {
   return (
     <>
-      <BasicControlledComponent />
+      <ControlledForm />
     </>
   );
 }
