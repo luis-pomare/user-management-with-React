@@ -1,7 +1,15 @@
+import { useState } from 'react';
+
 function BasicControlledComponent() {
+  const [controlledState, setControlledState] = useState('');
+
+  function handleChange(event) {
+    setControlledState(event.target.value);
+  }
+
   return (
     <>
-      <p>This is going to be a controlled component</p>
+      <input value={controlledState} onChange={handleChange} />
     </>
   );
 }
