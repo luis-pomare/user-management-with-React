@@ -1,10 +1,10 @@
 import './App.css';
-import ControlledForm from './components/ControlledForm.jsx';
+import FormWithSubmit from './components/FormWithSubmit';
 
 function App() {
   return (
     <>
-      <ControlledForm />
+      <FormWithSubmit />
     </>
   );
 }
