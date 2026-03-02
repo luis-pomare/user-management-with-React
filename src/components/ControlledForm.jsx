@@ -6,6 +6,14 @@ function ControlledForm() {
     age: '',
   });
 
+  function onChangeHandler(event) {
+    const { name, value } = event.target;
+    setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  }
+
   return (
     <>
       <form>
@@ -14,24 +22,14 @@ function ControlledForm() {
           name='age'
           placeholder='Your age'
           value={state.age}
-          onChange={(event) =>
-            setState((prevState) => ({
-              ...prevState,
-              age: Number(event.target.value),
-            }))
-          }
+          onChange={onChangeHandler}
         />
         <input
           type='text'
           name='name'
           placeholder='Your Name'
           value={state.name}
-          onChange={(event) =>
-            setState((prevState) => ({
-              ...prevState,
-              name: event.target.value,
-            }))
-          }
+          onChange={onChangeHandler}
         />
       </form>
     </>
